@@ -61,8 +61,6 @@ public class CodeGenerate {
                 String packageManager = basePackage.concat(".").concat(STR_MANAGER);
                 StringBuffer manager = buildManager(classFullName, className, packageManager, mapperFullClassName);
                 FileUtil.writeFileWhenFileNotFound(manager.toString(), managerFullPath);
-
-
             }
 
         } catch (ClassNotFoundException e) {
